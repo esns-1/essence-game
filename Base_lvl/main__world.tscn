@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://r76qnki1dohy"]
+
+[ext_resource type="PackedScene" path="res://old-fredrick_or_player.tscn" id="1_2scqj"]
+
+[node name="main _world" instance=ExtResource("1_2scqj")]
+
+[node name="fredrick or player" parent="." index="0"]
+position = Vector2(20, -47)
+
+[node name="AnimatedSprite2D" parent="fredrick or player" index="0"]
+animation = &"default"
+frame_progress = 0.0
+
+[node name="Camera2D" parent="fredrick or player" index="2"]
+position = Vector2(-6, -29)
+
+[node name="TileMap" parent="land" index="0"]
+position = Vector2(0, -32)
+rendering_quadrant_size = 64
